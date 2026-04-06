@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aluna Luxe - Luxury Vietnamese Hair Extensions</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#8B4513',
+secondary: '#F7F5F3'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20African%20American%20woman%20with%20luxurious%20curly%20hair%20extensions%20flowing%20in%20soft%20natural%20lighting%2C%20elegant%20beauty%20portrait%20with%20warm%20cream%20and%20beige%20tones%2C%20professional%20photography%2C%20clean%20minimalist%20background%2C%20high-end%20beauty%20campaign%20style%2C%20soft%20shadows%20and%20natural%20glow%2C%20premium%20hair%20care%20aesthetic&width=1920&height=1080&seq=hero1&orientation=landscape');
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.hero-overlay {
+background: linear-gradient(135deg, rgba(247, 245, 243, 0.85) 0%, rgba(232, 226, 219, 0.75) 50%, rgba(254, 252, 250, 0.85) 100%);
+}
+.font-playfair {
+font-family: 'Playfair Display', serif;
+}
+.font-inter {
+font-family: 'Inter', sans-serif;
+}
+.product-card {
+transition: all 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-4px);
+}
+.step-connector {
+background: linear-gradient(90deg, transparent 0%, #8B4513 50%, transparent 100%);
+height: 2px;
+}
+.faq-item {
+transition: all 0.3s ease;
+}
+.faq-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+}
+.faq-content.active {
+max-height: 200px;
+}
+.fade-in {
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.8s ease;
+}
+.fade-in.animate {
+opacity: 1;
+transform: translateY(0);
+}
+.slide-left {
+opacity: 0;
+transform: translateX(-50px);
+transition: all 0.8s ease;
+}
+.slide-left.animate {
+opacity: 1;
+transform: translateX(0);
+}
+.slide-right {
+opacity: 0;
+transform: translateX(50px);
+transition: all 0.8s ease;
+}
+.slide-right.animate {
+opacity: 1;
+transform: translateX(0);
+}
+.scale-in {
+opacity: 0;
+transform: scale(0.8);
+transition: all 0.8s ease;
+}
+.scale-in.animate {
+opacity: 1;
+transform: scale(1);
+}
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+</style>
+</head>
+<body class="font-inter text-gray-800 bg-white">
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<span class="font-['Pacifico'] text-2xl text-primary">Aluna Luxe</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a href="#collections" class="text-gray-700 hover:text-primary transition-colors">Collections</a>
+<a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#care" class="text-gray-700 hover:text-primary transition-colors">Hair Care</a>
+<a href="#faq" class="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-message-3-line"></i>
+</div>
+Book Consultation
+</button>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-menu-line text-xl text-gray-700 md:hidden cursor-pointer"></i>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center relative">
+<div class="absolute inset-0 bg-primary opacity-75"></div>
+<div class="absolute inset-0">
+<img src="https://readdy.ai/api/search-image?query=Three%20beautiful%20African%20American%20women%20modeling%20luxury%20Vietnamese%20hair%20extensions%2C%20elegant%20poses%20showcasing%20different%20hair%20textures%20straight%20body%20wave%20and%20curly%2C%20professional%20beauty%20photography%20with%20soft%20lighting%2C%20chocolate%20brown%20background%2C%20premium%20hair%20brand%20campaign%20style%2C%20sophisticated%20modeling%20aesthetic&width=1920&height=1080&seq=herothree&orientation=landscape"
+alt="Three Models Showcasing Hair Extensions"
+class="w-full h-full object-cover">
+</div>
+<div class="relative z-10 w-full">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h1 class="font-playfair text-5xl md:text-7xl font-bold text-white mb-6">
+Aluna Luxe
+</h1>
+<p class="text-xl md:text-2xl text-secondary mb-4 font-light">
+Luxury Vietnamese Hair Extensions
+</p>
+<p class="text-lg text-white opacity-90 mb-12 max-w-2xl mx-auto">
+Where Beauty Meets Authenticity
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-8 py-4 !rounded-button text-lg font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-message-3-line text-xl"></i>
+</div>
+Send Us a DM
+</button>
+<button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg font-medium hover:bg-white hover:text-primary transition-all whitespace-nowrap">
+View Collections
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Introduction -->
+<section id="about" class="py-20 bg-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="slide-left">
+<img src="https://readdy.ai/api/search-image?query=Luxury%20hair%20extensions%20packaging%20with%20beautiful%20curly%20Vietnamese%20hair%20bundles%20displayed%20elegantly%20on%20soft%20cream%20background%2C%20premium%20beauty%20product%20photography%2C%20minimalist%20styling%20with%20warm%20lighting%2C%20high-end%20cosmetic%20brand%20aesthetic%2C%20professional%20product%20showcase&width=600&height=600&seq=brand1&orientation=squarish"
+alt="Aluna Luxe Hair Extensions"
+class="w-full h-96 object-cover !rounded-xl shadow-lg">
+</div>
+<div class="slide-right">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-6">
+Crafted for the Modern Woman
+</h2>
+<p class="text-gray-700 text-lg mb-6 leading-relaxed">
+At Aluna Luxe, we believe every woman deserves to feel confident and beautiful. Our premium Vietnamese hair extensions are ethically sourced and carefully curated to provide you with the luxury experience you deserve.
+</p>
+<p class="text-gray-700 text-lg mb-8 leading-relaxed">
+From our signature curly textures to silky straight styles, each bundle is hand-selected for its exceptional quality, ensuring your hair looks and feels naturally beautiful.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-chat-3-line"></i>
+</div>
+Chat With Us
+</button>
+<button class="border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+Learn Our Story
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vietnamese Hair Education -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-4">
+The Vietnamese Hair Difference
+</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">
+Discover why Vietnamese hair is considered the gold standard in luxury extensions
+</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+<div class="slide-left">
+<img src="https://readdy.ai/api/search-image?query=Vietnamese%20woman%20with%20long%20beautiful%20black%20hair%20in%20traditional%20setting%2C%20cultural%20heritage%20photography%20with%20natural%20lighting%2C%20authentic%20beauty%20portrait%20showcasing%20healthy%20natural%20hair%20texture%2C%20professional%20photography%20with%20warm%20earth%20tones&width=600&height=500&seq=vietnam1&orientation=landscape"
+alt="Vietnamese Hair Heritage"
+class="w-full h-80 object-cover !rounded-xl shadow-lg">
+</div>
+<div class="slide-right">
+<h3 class="font-playfair text-3xl font-bold text-primary mb-6">
+Pure & Untouched Beauty
+</h3>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-secondary !rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-drop-line text-primary text-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-2">Never Chemically Processed</h4>
+<p class="text-gray-600">Vietnamese hair maintains its natural cuticle structure, ensuring strength, shine, and longevity that synthetic alternatives simply cannot match.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-secondary !rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-plant-line text-primary text-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-2">Naturally Healthy Diet</h4>
+<p class="text-gray-600">Rich in rice water treatments and natural oils, Vietnamese women's traditional hair care creates exceptionally strong, glossy hair with minimal damage.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-secondary !rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-palette-line text-primary text-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-2">Takes Color Beautifully</h4>
+<p class="text-gray-600">The virgin hair structure holds dye evenly and naturally, allowing for seamless color matching and stunning transformations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8 mb-16">
+<div class="text-center bg-secondary p-8 !rounded-xl fade-in stagger-1">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-time-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-playfair text-xl font-semibold text-primary mb-3">Lasts 12+ Months</h4>
+<p class="text-gray-600 text-sm leading-relaxed">Premium Vietnamese hair maintains its texture and integrity far longer than other hair types, making it a smart investment.</p>
+</div>
+<div class="text-center bg-secondary p-8 !rounded-xl fade-in stagger-2">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-water-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-playfair text-xl font-semibold text-primary mb-3">Minimal Tangling</h4>
+<p class="text-gray-600 text-sm leading-relaxed">The intact cuticle structure means less matting and tangling, so your hair looks fresh and manageable every day.</p>
+</div>
+<div class="text-center bg-secondary p-8 !rounded-xl fade-in stagger-3">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-magic-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-playfair text-xl font-semibold text-primary mb-3">Versatile Styling</h4>
+<p class="text-gray-600 text-sm leading-relaxed">Heat style, curl, straighten, or leave natural - Vietnamese hair adapts to your lifestyle while maintaining its beautiful texture.</p>
+</div>
+</div>
+
+<div class="text-center fade-in">
+<h3 class="font-playfair text-2xl font-semibold text-primary mb-4">Why Aluna Luxe Sources Only Vietnamese Hair</h3>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+We partner directly with Vietnamese suppliers who share our commitment to quality and ethics. Each bundle is carefully selected from donors who have never chemically treated their hair, ensuring you receive the purest, most luxurious extensions available. This isn't just about beauty - it's about honoring the cultural heritage and natural practices that create truly exceptional hair.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Aluna Luxe -->
+<section class="py-20 bg-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-4">
+The Aluna Luxe Promise
+</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">
+Experience the difference that premium quality and ethical sourcing makes
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center fade-in stagger-1">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-heart-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Hand-Selected Quality
+</h3>
+<p class="text-gray-600 leading-relaxed">
+Every single bundle passes through our rigorous selection process, ensuring only the finest Vietnamese hair reaches your doorstep.
+</p>
+</div>
+<div class="text-center fade-in stagger-2">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-shield-check-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Ethical Partnership
+</h3>
+<p class="text-gray-600 leading-relaxed">
+We build lasting relationships with Vietnamese suppliers, ensuring fair wages and supporting local communities with every purchase.
+</p>
+</div>
+<div class="text-center fade-in stagger-3">
+<div class="w-16 h-16 bg-white !rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="ri-customer-service-2-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Boutique Experience
+</h3>
+<p class="text-gray-600 leading-relaxed">
+From consultation to aftercare, we provide personalized service that makes you feel valued and beautiful at every step.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collections -->
+<section id="collections" class="py-20 bg-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-4">
+Our Signature Collections
+</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">
+Discover textures that celebrate your natural beauty
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="product-card bg-white !rounded-xl shadow-sm overflow-hidden scale-in stagger-1">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20straight%20Vietnamese%20hair%20extensions%20bundle%20with%20silky%20texture%2C%20professional%20product%20photography%20on%20clean%20white%20background%2C%20luxury%20hair%20care%20product%20styling%2C%20premium%20beauty%20brand%20aesthetic%2C%20soft%20natural%20lighting&width=400&height=400&seq=straight1&orientation=squarish"
+alt="Straight Collection"
+class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Silky Straight</h3>
+<p class="text-gray-600 mb-4">Sleek and sophisticated for a polished look</p>
+<button class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center text-sm">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-message-line"></i>
+</div>
+DM to Order
+</button>
+</div>
+</div>
+<div class="product-card bg-white !rounded-xl shadow-sm overflow-hidden scale-in stagger-2">
+<img src="https://readdy.ai/api/search-image?query=Luxurious%20body%20wave%20Vietnamese%20hair%20extensions%20with%20natural%20flowing%20waves%2C%20premium%20hair%20product%20photography%2C%20elegant%20styling%20on%20neutral%20background%2C%20high-end%20beauty%20brand%20presentation%2C%20soft%20professional%20lighting&width=400&height=400&seq=wave1&orientation=squarish"
+alt="Body Wave Collection"
+class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Body Wave</h3>
+<p class="text-gray-600 mb-4">Natural waves that move beautifully</p>
+<button class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center text-sm">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-message-line"></i>
+</div>
+DM to Order
+</button>
+</div>
+</div>
+<div class="product-card bg-white !rounded-xl shadow-sm overflow-hidden scale-in stagger-3">
+<img src="https://readdy.ai/api/search-image?query=Premium%20curly%20Vietnamese%20hair%20extensions%20with%20defined%20natural%20curls%2C%20luxury%20beauty%20product%20photography%2C%20professional%20styling%20with%20warm%20lighting%2C%20high-end%20hair%20care%20brand%20aesthetic%2C%20clean%20background%20presentation&width=400&height=400&seq=curly1&orientation=squarish"
+alt="Curly Collection"
+class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Natural Curly</h3>
+<p class="text-gray-600 mb-4">Defined curls full of life and bounce</p>
+<button class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center text-sm">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-message-line"></i>
+</div>
+DM to Order
+</button>
+</div>
+</div>
+<div class="product-card bg-white !rounded-xl shadow-sm overflow-hidden scale-in stagger-4">
+<img src="https://readdy.ai/api/search-image?query=Kinky%20curly%20Vietnamese%20hair%20extensions%20with%20tight%20natural%20curl%20pattern%2C%20luxury%20hair%20product%20photography%2C%20premium%20beauty%20brand%20styling%2C%20professional%20lighting%20with%20neutral%20background%2C%20high-end%20cosmetic%20presentation&width=400&height=400&seq=kinky1&orientation=squarish"
+alt="Kinky Curly Collection"
+class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Kinky Curly</h3>
+<p class="text-gray-600 mb-4">Textured curls that celebrate natural beauty</p>
+<button class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center text-sm">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-message-line"></i>
+</div>
+DM to Order
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How Ordering Works -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-4">
+Boutique Consultation Process
+</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">
+Experience personalized luxury service tailored to your unique style
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center relative fade-in stagger-1">
+<div class="w-16 h-16 bg-primary text-white !rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-message-3-line text-2xl"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Send Us a DM
+</h3>
+<p class="text-gray-600 leading-relaxed">
+Message us on Instagram or WhatsApp with your hair goals, preferred texture, and any questions you have.
+</p>
+<div class="hidden md:block absolute top-8 left-full w-full step-connector"></div>
+</div>
+<div class="text-center relative fade-in stagger-2">
+<div class="w-16 h-16 bg-primary text-white !rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-user-heart-line text-2xl"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Personal Hair Styling
+</h3>
+<p class="text-gray-600 leading-relaxed">
+Our boutique stylists provide expert recommendations tailored to your lifestyle, face shape, and personal aesthetic preferences.
+</p>
+<div class="hidden md:block absolute top-8 left-full w-full step-connector"></div>
+</div>
+<div class="text-center fade-in stagger-3">
+<div class="w-16 h-16 bg-primary text-white !rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-gift-line text-2xl"></i>
+</div>
+<h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+Secure Payment & Delivery
+</h3>
+<p class="text-gray-600 leading-relaxed">
+Complete your order with secure payment options. Your hair arrives with exclusive care guide and styling tips.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hair Care Section -->
+<section id="care" class="py-20 bg-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="slide-left">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-6">
+Expert Hair Care Tips
+</h2>
+<p class="text-gray-700 text-lg mb-6 leading-relaxed">
+Maintain the beauty and longevity of your Aluna Luxe extensions with our professional care guide. Learn the secrets to keeping your hair looking salon-fresh every day.
+</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<p class="text-gray-700">Gentle washing techniques for curly textures</p>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<p class="text-gray-700">Recommended products for maintenance</p>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<p class="text-gray-700">Styling tips for different occasions</p>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">
+Download Care Guide
+</button>
+</div>
+<div class="slide-right">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20African%20American%20woman%20caring%20for%20her%20curly%20hair%20extensions%2C%20applying%20hair%20care%20products%20with%20gentle%20hands%2C%20natural%20lighting%20in%20elegant%20bathroom%20setting%2C%20luxury%20hair%20care%20routine%2C%20professional%20beauty%20photography%20with%20warm%20tones&width=600&height=600&seq=care1&orientation=squarish"
+alt="Hair Care Tips"
+class="w-full h-96 object-cover !rounded-xl shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section id="faq" class="py-20 bg-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-playfair text-4xl font-bold text-primary mb-4">
+Frequently Asked Questions
+</h2>
+<p class="text-gray-600 text-lg">
+Everything you need to know about Aluna Luxe hair extensions
+</p>
+</div>
+<div class="space-y-4">
+<div class="faq-item border border-gray-200 !rounded-lg fade-in stagger-1">
+</修改前>
+<button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+<span class="font-medium text-primary">How long do Aluna Luxe extensions last?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-primary text-xl faq-icon"></i>
+</div>
+</button>
+<div class="faq-content px-6 pb-6">
+<p class="text-gray-600">With proper care, our premium Vietnamese hair extensions can last 12-18 months. The longevity depends on maintenance, styling frequency, and care routine.</p>
+</div>
+</div>
+<div class="faq-item border border-gray-200 !rounded-lg fade-in stagger-2">
+<button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+<span class="font-medium text-primary">Can I color or style the hair?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-primary text-xl faq-icon"></i>
+</div>
+</button>
+<div class="faq-content px-6 pb-6">
+<p class="text-gray-600">Yes! Our raw Vietnamese hair can be colored, styled, and heat-treated just like your natural hair. We recommend consulting with a professional colorist for best results.</p>
+</div>
+</div>
+<div class="faq-item border border-gray-200 !rounded-lg fade-in stagger-3">
+<button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+<span class="font-medium text-primary">What's your return policy?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-primary text-xl faq-icon"></i>
+</div>
+</button>
+<div class="faq-content px-6 pb-6">
+<p class="text-gray-600">We offer a 30-day satisfaction guarantee. If you're not completely happy with your purchase, contact us for a full refund or exchange.</p>
+</div>
+</div>
+<div class="faq-item border border-gray-200 !rounded-lg fade-in stagger-4">
+<button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+<span class="font-medium text-primary">How much hair do I need?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-primary text-xl faq-icon"></i>
+</div>
+</button>
+<div class="faq-content px-6 pb-6">
+<p class="text-gray-600">For a full install, we recommend 3-4 bundles for lengths up to 20 inches, and 4-5 bundles for longer lengths. Our hair consultants can help you determine the perfect amount.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-20 bg-primary text-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20African%20American%20woman%20with%20beautiful%20flowing%20curly%20hair%20extensions%2C%20confident%20pose%20with%20soft%20lighting%2C%20luxury%20beauty%20portrait%20with%20warm%20golden%20tones%2C%20professional%20photography%20for%20premium%20hair%20brand%2C%20sophisticated%20styling&width=1920&height=600&seq=cta1&orientation=landscape"
+alt="Transform Your Look"
+class="w-full h-full object-cover">
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold mb-6">
+Ready to Transform Your Look?
+</h2>
+<p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+Join thousands of women who trust Aluna Luxe for their hair transformation. Experience luxury, quality, and confidence with every install.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+<button class="bg-white text-primary px-8 py-4 !rounded-button text-lg font-medium hover:bg-opacity-90 transition-all whitespace-nowrap flex items-center justify-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-instagram-line text-xl"></i>
+</div>
+DM on Instagram
+</button>
+<button class="bg-green-500 text-white px-8 py-4 !rounded-button text-lg font-medium hover:bg-green-600 transition-all whitespace-nowrap flex items-center justify-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-whatsapp-line text-xl"></i>
+</div>
+WhatsApp Us
+</button>
+</div>
+<div class="flex justify-center space-x-8 text-sm opacity-80">
+<span class="flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-truck-line"></i>
+</div>
+Free Shipping
+</span>
+<span class="flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-shield-check-line"></i>
+</div>
+Quality Guarantee
+</span>
+<span class="flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-customer-service-line"></i>
+</div>
+Expert Support
+</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<span class="font-['Pacifico'] text-2xl text-white mb-4 block">Aluna Luxe</span>
+<p class="text-gray-400 mb-4">
+Premium Vietnamese hair extensions crafted for the modern woman who values quality and authenticity.
+</p>
+<div class="flex space-x-4">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-instagram-line text-xl hover:text-primary cursor-pointer transition-colors"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-facebook-line text-xl hover:text-primary cursor-pointer transition-colors"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-youtube-line text-xl hover:text-primary cursor-pointer transition-colors"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Collections</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Silky Straight</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Body Wave</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Natural Curly</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Kinky Curly</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Support</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Care Guide</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Size Chart</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Get hair care tips and exclusive offers</p>
+<div class="flex">
+<input type="email" placeholder="Enter your email"
+class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 !rounded-l-button text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+<button class="bg-primary px-4 py-2 !rounded-r-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Subscribe
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2024 Aluna Luxe. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="faq-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const faqToggles = document.querySelectorAll('.faq-toggle');
+faqToggles.forEach(toggle => {
+toggle.addEventListener('click', function() {
+const faqItem = this.closest('.faq-item');
+const content = faqItem.querySelector('.faq-content');
+const icon = this.querySelector('.faq-icon');
+const isActive = content.classList.contains('active');
+document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('active'));
+document.querySelectorAll('.faq-icon').forEach(i => i.className = 'ri-add-line text-primary text-xl faq-icon');
+if (!isActive) {
+content.classList.add('active');
+icon.className = 'ri-subtract-line text-primary text-xl faq-icon';
+}
+});
+});
+});
+</script>
+<script id="smooth-scrolling">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="scroll-animations">
+document.addEventListener('DOMContentLoaded', function() {
+const animateElements = document.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in');
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('animate');
+}
+});
+}, {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+});
+animateElements.forEach(element => {
+observer.observe(element);
+});
+});
+</script>
+</body>
+</html>
